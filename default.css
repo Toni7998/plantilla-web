@@ -420,3 +420,19 @@ ul.contact li a.icon-rss:before {
 
 	/* Posició final a la dreta */
 }
+
+/* Fem que les imatges girin en passar el ratolí per sobre */
+.image-full:hover {
+	animation: girar 1s linear;
+}
+
+/* Creem l'animació per quan posem el ratolí a sobre de les imatges, girin */
+@keyframes girar {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
