@@ -393,11 +393,22 @@ ul.contact li a.icon-rss:before {
 	color: #FFF;
 }
 
+/* Fem que es pugui moure el cotxe pel mapa durant 5s i després es repeteixi l'animació, 
+   per veure-ho bé posar el zoom al 100% */
+.cotxe {
+	position: absolute;
+	bottom: 200px;
+	/* Ajusta la posició vertical inicial */
+	animation: moureCotxe 2.5s linear infinite;
+	/* L'animació dura 5 segons i es repeteix infinitament */
+}
+
+/* Creem amb keyframes l'animació del cotxe */
 @keyframes moureCotxe {
 	0% {
 		left: -3%;
 		bottom: 100px;
-		/* Ajusta la posició vertical per estar a l'alçada del banner */
+		/* Ajustem la posició vertical per estar a l'alçada del banner */
 	}
 
 	/* Posició inicial a l'esquerra */
@@ -409,13 +420,3 @@ ul.contact li a.icon-rss:before {
 
 	/* Posició final a la dreta */
 }
-
-.cotxe {
-	position: absolute;
-	bottom: 200px;
-	/* Ajusta la posició vertical inicial */
-	animation: moureCotxe 5s linear infinite;
-	/* L'animació dura 5 segons i es repeteix infinitament */
-}
-
-
