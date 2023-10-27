@@ -443,3 +443,8 @@ ul.contact li a.icon-rss:before {
 	color: #ff0095;
 	cursor: pointer;
 }
+
+/* Canviem el color dels botons en passar per sobre a color blau */
+.button:hover {
+	background-color: #0000FF;
+}
